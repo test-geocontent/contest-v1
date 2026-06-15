@@ -113,7 +113,8 @@
   display:inline-flex;
   align-items:center;
   gap:.3rem;
-  font-size:.68rem;
+  font-size:.78rem;
+  font-weight:500;
   letter-spacing:.08em;
   text-transform:uppercase;
   color:var(--gold);
@@ -448,7 +449,7 @@
       <a href="#contest"  class="text-xs tracking-widest uppercase hover:text-yellow-300 transition-colors" style="color:var(--muted)">Contest</a>
       <a href="https://geoinvesting.com" target="_blank" class="text-xs tracking-widest uppercase hover:text-yellow-300 transition-colors" style="color:var(--muted)">About GeoInvesting</a>
       <a href="https://geoinvesting.com/learn" target="_blank" class="text-xs tracking-widest uppercase hover:text-yellow-300 transition-colors" style="color:var(--muted)">Why Microcaps?</a>
-      <a href="https://mscliffnotes.substack.com" target="_blank" class="text-xs tracking-widest uppercase hover:text-yellow-300 transition-colors" style="color:var(--muted)">About MS Cliff Notes Substack</a>
+      <a href="https://mscliffnotes.substack.com" target="_blank" class="text-xs tracking-widest uppercase hover:text-yellow-300 transition-colors" style="color:var(--muted)">About Cliff Notes Substack</a>
       <a href="#register" class="btn-gold text-xs py-2 px-4">Get Notified</a>
     </div>
 
@@ -464,8 +465,8 @@
   <div id="nav-mobile" class="flex-col px-6 pb-5 gap-4 md:hidden border-t" style="border-color:var(--border)">
     <a href="#contest"  class="text-xs tracking-widest uppercase py-1" style="color:var(--muted)">Contest</a>
     <a href="https://geoinvesting.com" target="_blank" class="text-xs tracking-widest uppercase py-1" style="color:var(--muted)">About GeoInvesting</a>
-    <a href="https://geoinvesting.com/learn" target="_blank" class="text-xs tracking-widest uppercase py-1" style="color:var(--muted)">Learn Microcap</a>
-    <a href="https://mscliffnotes.substack.com" target="_blank" class="text-xs tracking-widest uppercase py-1" style="color:var(--muted)">Cliff Notes</a>
+    <a href="https://geoinvesting.com/learn" target="_blank" class="text-xs tracking-widest uppercase py-1" style="color:var(--muted)">Why Microcaps?</a>
+    <a href="https://mscliffnotes.substack.com" target="_blank" class="text-xs tracking-widest uppercase py-1" style="color:var(--muted)">About Cliff Notes Substack</a>
     <a href="#register" class="btn-gold text-xs py-2 px-4 self-start mt-2">Get Notified</a>
   </div>
 </nav>
@@ -516,14 +517,18 @@
       <!-- CTA buttons -->
       <div class="flex flex-wrap gap-4 mb-12">
         <a href="#register" class="btn-gold">Register Now</a>
-        <a href="#how-it-works" class="btn-outline">Learn More</a>
       </div>
 
 <!-- Conference cards -->
 <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-12 conf-grid">
 
   <!-- Conference I -->
-  <div class="conf-card p-5">
+  <a 
+    href="https://www.meetmax.com/sched/event_130817/conference_home.html"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="conf-card p-5 block"
+  >
     <div class="mono text-xs mb-3" style="color:var(--gold);letter-spacing:.1em">
       CONFERENCE I
     </div>
@@ -533,14 +538,9 @@
         Planet MicroCap
       </div>
 
-      <a 
-        href="https://www.meetmax.com/sched/event_130817/conference_home.html"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="conf-link"
-      >
+      <div class="conf-link">
         Visit Website →
-      </a>
+      </div>
     </div>
 
     <div class="flex items-center gap-2" style="color:var(--muted);font-size:.8rem">
@@ -550,10 +550,15 @@
       </svg>
       Las Vegas &nbsp;•&nbsp; June 2026
     </div>
-  </div>
+  </a>
 
   <!-- Conference II -->
-  <div class="conf-card p-5">
+  <a 
+    href="https://smallcapdiscoveries.com/annual-smallcap-discoveries-conference-2025/"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="conf-card p-5 block"
+  >
     <div class="mono text-xs mb-3" style="color:var(--gold);letter-spacing:.1em">
       CONFERENCE II
     </div>
@@ -563,14 +568,9 @@
         SmallCap Discoveries
       </div>
 
-      <a 
-        href="https://smallcapdiscoveries.com/annual-smallcap-discoveries-conference-2025/"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="conf-link"
-      >
+      <div class="conf-link">
         Visit Website →
-      </a>
+      </div>
     </div>
 
     <div class="flex items-center gap-2" style="color:var(--muted);font-size:.8rem">
@@ -580,10 +580,15 @@
       </svg>
       Vancouver &nbsp;•&nbsp; August 2026
     </div>
-  </div>
+  </a>
 
   <!-- Conference III -->
-  <div class="conf-card p-5">
+  <a 
+    href="https://www.meetmax.com/sched/event_135697/__welcome_cp.html?bank_access=0&event_id=135697"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="conf-card p-5 block"
+  >
     <div class="mono text-xs mb-3" style="color:var(--gold);letter-spacing:.1em">
       CONFERENCE III
     </div>
@@ -593,14 +598,9 @@
         LD Micro
       </div>
 
-      <a 
-        href="https://www.meetmax.com/sched/event_135697/__welcome_cp.html?bank_access=0&event_id=135697"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="conf-link"
-      >
+      <div class="conf-link">
         Visit Website →
-      </a>
+      </div>
     </div>
 
     <div class="flex items-center gap-2" style="color:var(--muted);font-size:.8rem">
@@ -610,14 +610,9 @@
       </svg>
       Los Angeles &nbsp;•&nbsp; October 2026
     </div>
-  </div>
+  </a>
 
 </div>
-
-
-
-    </div>
-  </div>
 </section>
 
 <!-- ═══════════════════════════ TICKER ═══════════════════════════ -->
@@ -640,28 +635,59 @@
       The full rules will be released shortly, but the basic format is simple.
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 reveal">
-      <div class="step-card">
-        <div class="step-num mb-4">01</div>
-        <div class="display font-semibold text-lg mb-3" style="color:var(--white)">Select Stocks</div>
-        <p style="color:var(--muted);font-size:.88rem;line-height:1.7">Pick a basket of microcap stocks from companies presenting at each participating conference.</p>
-      </div>
-      <div class="step-card">
-        <div class="step-num mb-4">02</div>
-        <div class="display font-semibold text-lg mb-3" style="color:var(--white)">Follow the Conferences</div>
-        <p style="color:var(--muted);font-size:.88rem;line-height:1.7">The contest runs across three major microcap conferences over the course of 2026.</p>
-      </div>
-      <div class="step-card">
-        <div class="step-num mb-4">03</div>
-        <div class="display font-semibold text-lg mb-3" style="color:var(--white)">Track Performance</div>
-        <p style="color:var(--muted);font-size:.88rem;line-height:1.7">Portfolio performance will be tracked publicly on a live leaderboard for the duration of the contest.</p>
-      </div>
-      <div class="step-card">
-        <div class="step-num mb-4">04</div>
-        <div class="display font-semibold text-lg mb-3" style="color:var(--white)">Compete to Win</div>
-        <p style="color:var(--muted);font-size:.88rem;line-height:1.7">Top performers earn cash prizes, bonus awards, and recognition across the microcap community.</p>
-      </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5 reveal">
+
+  <div class="step-card">
+    <div class="step-num mb-4">01</div>
+    <div class="display font-semibold text-lg mb-3" style="color:var(--white)">
+      Register
     </div>
+    <p style="color:var(--muted);font-size:.88rem;line-height:1.7">
+      No entry fee, ever. No subscriptions required.
+    </p>
+  </div>
+
+  <div class="step-card">
+    <div class="step-num mb-4">02</div>
+    <div class="display font-semibold text-lg mb-3" style="color:var(--white)">
+      Follow the Conferences
+    </div>
+    <p style="color:var(--muted);font-size:.88rem;line-height:1.7">
+      The contest runs across three major microcap conferences over the course of 2026.
+    </p>
+  </div>
+
+  <div class="step-card">
+    <div class="step-num mb-4">03</div>
+    <div class="display font-semibold text-lg mb-3" style="color:var(--white)">
+      Select Stocks
+    </div>
+    <p style="color:var(--muted);font-size:.88rem;line-height:1.7">
+      At the conclusion of each conference, select five stocks from companies that presented at the conference.
+    </p>
+  </div>
+
+  <div class="step-card">
+    <div class="step-num mb-4">04</div>
+    <div class="display font-semibold text-lg mb-3" style="color:var(--white)">
+      Track Performance
+    </div>
+    <p style="color:var(--muted);font-size:.88rem;line-height:1.7">
+      Portfolio performance will be tracked publicly on a leaderboard for the duration of the contest.
+    </p>
+  </div>
+
+  <div class="step-card">
+    <div class="step-num mb-4">05</div>
+    <div class="display font-semibold text-lg mb-3" style="color:var(--white)">
+      Win Prizes
+    </div>
+    <p style="color:var(--muted);font-size:.88rem;line-height:1.7">
+      Top performers win cash prizes, bonus awards, and recognition within the microcap community.
+    </p>
+  </div>
+
+</div>
   </div>
 </section>
 
@@ -676,7 +702,7 @@
         <div class="prize-amount prize-glow mb-3">$15,000+</div>
         <div class="display font-medium mb-6" style="font-size:1.2rem;color:var(--muted)">Total Prize Pool</div>
         <p style="color:var(--muted);font-size:.92rem;line-height:1.75;max-width:42ch">
-          Cash prizes, bonus awards, and community recognition distributed across top performers. No entry fee. No subscription. Just skill.
+          Cash prizes, bonus awards, and community recognition distributed across top performers. No entry fee. No subscriptions. Just skill.
         </p>
       </div>
 
@@ -739,7 +765,7 @@
         <div class="section-label mb-4">Early Access</div>
         <h2 class="display font-semibold mb-5" style="font-size:clamp(1.8rem,3vw,2.6rem);color:var(--white)">Registration Is Now Open</h2>
         <p style="color:var(--muted);font-size:.92rem;line-height:1.75;margin-bottom:2rem">
-  Registration is now open for the 2026 Microcap Stock Picking Contest. Secure your spot before the contest officially begins.
+  Registration is now open for the 2026 Microcap Stock Picking Contest. Secure your spot before the contest officially begins 10 days after the conclusion of the Planet Microcap conference in Vegas (June 16, 2026 to June 18, 2026).
 </p>
 
         <div>
@@ -827,7 +853,7 @@
           Where can I view the full contest rules?
           <span class="faq-icon">+</span>
         </button>
-        <div class="faq-body">The complete ruleset will be published prior to contest launche, shortly after June 20th, 2026. Registration is now live. Sign up for the early access list above to be notified the moment rules are released.</div>
+        <div class="faq-body">The complete ruleset will be published prior to contest launche, shortly after June 18th, 2026. Registration is now live. Sign up for the early access list above to be notified the moment rules are released.</div>
       </div>
 
       <div class="faq-item">
@@ -860,7 +886,7 @@
       <div class="sponsor-logo">MS Microcaps</div>
     </div>
     <p class="text-xs mt-6 reveal" style="color:var(--muted);max-width:50ch;margin-left:auto;margin-right:auto;line-height:1.7">
-      GeoInvesting and MS Microcaps support the microcap investing community through research and education focused on overlooked public companies. They help investors better understand opportunities, risks, and developments across the microcap landscape.
+      GeoInvesting and MS Microcaps research microcap stocks, track management teams, and analyze market opportunities. This contest gives independent investors, analysts, fund managers, and newsletter writers a structured way to showcase stock-picking skill in the microcap landscape.
     </p>
   </div>
 </section>
@@ -916,7 +942,7 @@
         <div class="text-xs tracking-widest uppercase mb-4" style="color:var(--gold);font-weight:500">Resources</div>
         <div class="flex flex-col gap-3">
           <a href="https://geoinvesting.com" target="_blank" class="text-xs hover:text-white transition-colors" style="color:var(--muted)">About GeoInvesting</a>
-          <a href="https://mscliffnotes.substack.com" target="_blank" class="text-xs hover:text-white transition-colors" style="color:var(--muted)">MS Cliff Notes Substack</a>
+          <a href="https://mscliffnotes.substack.com" target="_blank" class="text-xs hover:text-white transition-colors" style="color:var(--muted)">Cliff Notes Substack</a>
 		  <a href="https://infoarb.io/" class="text-xs hover:text-white transition-colors" style="color:var(--muted)">InfoArb Monitor</a>
           <a href="https://deltasheets.substack.com/" target="_blank" class="text-xs hover:text-white transition-colors" style="color:var(--muted)">InfoArb Sheets</a>
         </div>
