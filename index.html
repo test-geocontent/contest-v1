@@ -340,7 +340,7 @@
     .ticker-inner {
       display: flex; gap: 0;
       width: max-content;
-      animation: ticker 28s linear infinite;
+      animation: ticker 90s linear infinite;
     }
     @keyframes ticker {
       0%   { transform: translateX(0); }
@@ -617,9 +617,40 @@
 
 <!-- ═══════════════════════════ TICKER ═══════════════════════════ -->
 <div class="ticker-wrap py-0">
+
+<!-- Conference Status Bar -->
+<div 
+  class="text-center py-3 px-4"
+  style="
+    border-bottom:1px solid rgba(201,168,76,.18);
+    background:
+      linear-gradient(
+        90deg,
+        rgba(201,168,76,.04) 0%,
+        rgba(201,168,76,.10) 50%,
+        rgba(201,168,76,.04) 100%
+      );
+    color:var(--gold2);
+    font-size:.8rem;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    font-weight:600;
+    position:relative;
+    overflow:hidden;
+  "
+>
+
+  <span style="opacity:.9">
+    ✦ Planet MicroCap Las Vegas is Ongoing • Featured presenting companies below
+  </span>
+
+</div>
+
+  <!-- Moving ticker -->
   <div class="ticker-inner" id="ticker-inner">
     <!-- duplicated via JS -->
   </div>
+
 </div>
 
 <!-- ═══════════════════════════ HOW IT WORKS ═══════════════════════════ -->
@@ -971,26 +1002,30 @@ document.getElementById('hamburger').addEventListener('click', () => {
 
 /* ── Ticker tape ── */
 const tickers = [
-  { sym:'TGEN', val:'+129.67%', up:true  },
-  { sym:'BURCA', val:'-6.54%', up:false },
-  { sym:'FACO', val:'+61.68%', up:true  },
-  { sym:'KLNG', val:'+81.88%', up:true  },
-  { sym:'MOJO', val:'-33.77%', up:false },
-  { sym:'ACFN', val:'+71.28%', up:true  },
-  { sym:'FTLF', val:'-15.93%', up:false  },
-  { sym:'KEQU', val:'-44.52%', up:false },
-  { sym:'SIF', val:'+13.46%',up:true  },
-  { sym:'FSI', val:'-7.46%', up:false },
-  { sym:'PXHI', val:'+17.82%', up:true },
-  { sym:'PPIH', val:'+11.09%', up:true },
-  { sym:'RMB.V', val:'-8.82%', up:false },
-  { sym:'COV.V', val:'-36.92%', up:false },
-  { sym:'CPH.TO', val:'+30.94%', up:true },
+  'BRAI','BILD.V','PALS.V','CWD','MBAI','GELS','BUDA','CTW','IDN','LOVE.TO',
+  'IQST','ATGN','FCI','PCSV','SKYX','ZOMD.V','ACNT','XTRA','IMP','NURS.V',
+  'IVF','PDEX','LRGR','DRT','BOGO','RX.V','PLBY','BOS.TO','LIB.V','RNGE',
+  'ASYS','DLPN','SLYG','DIBS','CITR','SNWV','GRID','LODE','BLZE','CXDO',
+  'IRIX','NLH.V','ROMJ.V','DUOT','KINS','HITI','TMG.V','VDTA','KWY','NLCP',
+  'MDBH','WATT','KDOZ','KLNG','ERTH.CN','DAIO','JSDA','PAYS','ACCS','IEHC',
+  'NEWT','VELO','ETST','LSF','POCI','TSSI','CREX','COCH','AMNF','KOPN',
+  'NMTC','ATCH','CYBT.CN','WAVE','ZDGE','MPTI','KITS.TO','BYL','JRSH','PPSI',
+  'USIO','PINK.V','ECOR','ENW','FOR.V','TELI.CN','ELWT','LGL','BOF','HGBL',
+  'ACFN','UMAC','AYTU','NTRP','PRPO','TATT','EONR','LINK','ELUT','MAMA',
+  'SOFW','OPHC','MLCI','INBS','IDR','PHX.TO','FTK','ZDC','FET','OIS',
+  'KBSX','DCGO','DC','NXGL','INDO','BSEM','STRW','SALT','FEAM','DB.V',
+  'USAQ','NXLV','PHX','CZZL.NE','NBM.V','ARG.TO','DHX','MCB','SUNXF',
+  'KLYG','NWTG','TRCK','BLM','AUUA.V','AKA','ACON'
 ];
+
 const inner = document.getElementById('ticker-inner');
+
 const html = tickers.map(t =>
-  `<div class="ticker-item"><span>${t.sym}</span><span class="${t.up?'up':'down'}">${t.val}</span></div>`
+  `<div class="ticker-item">
+    <span style="color:var(--gold2)">${t}</span>
+  </div>`
 ).join('');
+
 inner.innerHTML = html + html; // duplicate for seamless loop
 
 /* ── Scroll reveal ── */
